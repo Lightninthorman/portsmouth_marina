@@ -1,0 +1,118 @@
+header.container-fluid{
+    background-image: url('images/piscataqua_marina_fourth_of_july_fireworks.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #434343;
+    height:700px;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding:10px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:150px;
+    z-index: 2;
+    transition: 1s;
+}
+
+nav a{
+    text-decoration: none;
+    color:whitesmoke;
+    margin:20px 10px;
+}
+
+.logo{
+    height: 100%;
+}
+
+
+/*
+=======
+Main Container Styling
+=======
+*/
+body{
+    background-color:wheat;
+}
+
+.highlight-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding:50px 0;
+
+}
+
+.highlight-group{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.highlight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width:250px;
+    height:300px;
+    margin:10px;
+    padding: 15px;
+    background-color: cornsilk;
+    border-radius: 10px;
+}
+
+.highlight img{
+    width:80%;
+}
+
+#rates{
+    background-color: cornsilk;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+
+.rate-explanation{
+    width: 40%;
+    margin: 0 15px;
+}
+
+#rates table{
+    max-width: 500px;
+    margin: 0 15px;
+}
+
+footer{
+    background-color: green;
+    height:100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* For mobile phones: */
+
+  #rates table{
+      font-size: 20px;
+  }
+
+  .highlight{
+      width: 350px;
+      height: 250px;
+  }
+}

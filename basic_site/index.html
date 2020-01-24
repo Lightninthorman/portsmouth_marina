@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Piscataqua Marina</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header class="container-fluid">
+
+
+            <nav>
+                <img class="logo" src="images/ThorLogo.png" alt="">
+                <a data-toggle="modal" data-target="#exampleModal">
+                  Launch demo modal
+                </a>
+                <a href="#"><h5>About</h5></a>
+                <a href="#"><h5>Rates</h5></a>
+                <a href="#"><h5>Applications & Policies</h5></a>
+                <a href="#"><h5>Contact</h5></a>
+            </nav>
+            <div class="cta_buttons">
+                <a href="#" class="btn btn-success">Transient Reservation</a>
+                <a href="#" class="btn btn-success">Long Term Application</a>
+            </div>
+
+        </header>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="container">
+            <div class="highlight-container">
+                <div class="highlight-group">
+                    <div class="highlight">
+                        <a href="#"><img src="https://img.icons8.com/cotton/100/000000/hearts--v2.png"></a>
+                        <h4>Amenities</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <a href="#">learn more</a></p>
+
+                        <!-- <a href="https://icons8.com/icon/114008/heart-outline">Heart Outline icon by Icons8</a> -->
+                    </div>
+                    <div class="highlight">
+                        <a href="#rates"><img src="https://img.icons8.com/dusk/100/000000/coins.png"></a>
+                        <h4>Rates</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <a href="#rates">learn more</a></p>
+                        <!-- <a href="https://icons8.com/icon/42793/coins">Coins icon by Icons8</a> -->
+                    </div>
+                </div>
+                <div class="highlight-group">
+                    <div class="highlight">
+                        <a href="#"><img src="https://img.icons8.com/dusk/100/000000/signpost.png"></a>
+                        <h4>Location</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <a href="#">learn more</a></p>
+                        <!-- <a href="https://icons8.com/icon/46820/signpost">Signpost icon by Icons8</a> -->
+                    </div>
+                    <div class="highlight">
+                        <a href="#"><img src="https://img.icons8.com/dusk/100/000000/document.png"></a>
+                        <h4>Applications and Policies</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <a href="#">learn more</a></p>
+                        <!-- <a href="https://icons8.com/icon/42795/document">Document icon by Icons8</a> -->
+                    </div>
+                </div>
+            </div>
+            <div id="rates">
+                <h2>Rates</h2>
+                <div class="highlight-group rate-group">
+                    <div class="rate-explanation">
+                        <p>Details about the rates can be included here, or we can list what is included when you stay here. Or we can put in a calculator to let people figure out how much their transient stay will be. Or both. Whatever can go here or nothing at all! So many choices.</p>
+                    </div>
+                    <table class="table table-striped" >
+                      <thead>
+                        <tr>
+                          <th scope="col">Service</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">Duration</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Transient</td>
+                          <td>$50 / ft</td>
+                          <td>Daily. Max 1 week.</td>
+                        </tr>
+                        <tr>
+                          <td>Winter Slip</td>
+                          <td>$1000</td>
+                          <td>October - April</td>
+                        </tr>
+                        <tr>
+                          <td>Summer Slip</td>
+                          <td>$25000</td>
+                          <td>May - September</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.0823995563564!2d-70.75346204930547!3d43.0817629790427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2bf100c5a9c07%3A0xf3a64ad548c65dde!2sBadgers%20Island%20Marina!5e0!3m2!1sen!2sus!4v1579811561587!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <footer class="container-fluid">
+        </footer>
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+        <script src="app.js" charset="utf-8"></script>
+    </body>
+</html>
