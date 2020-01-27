@@ -33,13 +33,22 @@ nav{
 nav a{
     text-decoration: none;
     color:whitesmoke;
-    margin:20px 10px;
+    margin:20px 20px;
 }
 
 .logo{
     height: 100%;
 }
 
+.nav-links{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#hamburger{
+    display:none
+}
 
 /*
 =======
@@ -104,8 +113,8 @@ footer{
     height:100px;
 }
 
-@media only screen and (max-width: 1200px) {
-  /* For mobile phones: */
+@media only screen and (max-width: 1200px){
+  /* Keeps layout looking ok as screen gets smaller */
 
   #rates table{
       font-size: 20px;
@@ -115,4 +124,18 @@ footer{
       width: 350px;
       height: 250px;
   }
+
+  #rates h2{
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px){
+    .nav-links{
+        display: none;
+    }
+
+    #hamburger{
+        display:block;
+    }
 }
