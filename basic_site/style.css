@@ -175,7 +175,8 @@ Main Container Styling
 }
 .highlight-icon{
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(222,243,246,1) 0%, rgba(255,255,255,0) 73%);
+    background: radial-gradient(circle, rgba(222,243,246,1) 0%, rgba(255,255,255,0) 70%);
+    width:100%;
 }
 
 #rates{
@@ -229,9 +230,6 @@ footer{
     margin:0;
 }
 
-.footer-content img{
-    width:20px;
-}
 
 /*
 =======
