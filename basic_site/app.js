@@ -5,10 +5,16 @@ $(() => {
 //=======
     $(window).on('scroll', () => {
         if($(window).scrollTop() > 50){
-            $('nav').css({'height':'100px','background-color':' rgba(67,67,67,.8)','filter':'drop-shadow(0 3px 3px #434343)'});
+            $('nav').css({'height':'100px','background-color':' rgba(6,66,115,.8)','filter':'drop-shadow(0 3px 3px #064273)'});
+            $('.nav-item').css({'font-size':'18px'});
         }else{
             $('nav').css({'height':'150px','background-color':'transparent', 'filter':'none'});
+            $('.nav-item').css({'font-size':'20px'});
         };
+    })
+
+    $('.hamburger-item').on('click',() => {
+        $('#menuModal').modal('hide');
     })
 
 })

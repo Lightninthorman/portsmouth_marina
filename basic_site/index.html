@@ -14,73 +14,100 @@
             <nav>
                 <img class="logo" src="images/ThorLogo.png" alt="">
                 <div class="nav-links">
-                    <a href="#"><h5>About</h5></a>
-                    <a href="#"><h5>Rates</h5></a>
-                    <a href="#"><h5>Applications & Policies</h5></a>
-                    <a href="#"><h5>Contact</h5></a>
+                    <a class="link"  href="#"><h5 class="nav-item">About</h5></a>
+                    <a class="link" href="#1"><h5 class="nav-item">Rates</h5></a>
+                    <a class="link" href="#"><h5 class="nav-item">Applications & Policies</h5></a>
+                    <a class="link" href="#"><h5 class="nav-item">Contact</h5></a>
                 </div>
-                <a id="hamburger" data-toggle="modal" data-target="#exampleModal">
+                <a id="hamburger" data-toggle="modal" data-target="#menuModal">
                   <img src="images/hamburger_icon_1.png" alt="">
                 </a>
             </nav>
-            <div class="cta_buttons">
-                <a href="#" class="btn btn-success">Transient Reservation</a>
-                <a href="#" class="btn btn-success">Long Term Application</a>
-            </div>
+
+                <a href="#" class="btn btn-success btn-lg cta-btn">Contact Today to Reserve a Spot</a>
+                <!-- <a href="#" class="btn btn-success btn-lg cta-btn">Long Term Application</a> -->
+
 
         </header>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="menuModalLabel">Piscataqua Marina</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <a href="#1"><h5 class="hamburger-item" data-dismiss="modal">About</h5></a>
+                  <a href="#2"><h5 class="hamburger-item" data-dismiss="modal">Rates</h5></a>
+                  <a href="#3"><h5 class="hamburger-item" data-dismiss="modal">Applications & Policies</h5></a>
+                  <a href="#4"><h5 class="hamburger-item" data-dismiss="modal">Contact</h5></a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container">
-            <div class="highlight-container">
-                <div class="highlight-group">
-                    <div class="highlight">
-                        <a href="#"><img src="https://img.icons8.com/cotton/100/000000/hearts--v2.png"></a>
-                        <h4>Amenities</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <a href="#">learn more</a></p>
+                <div class="row mt-5 rounded">
+                    <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center dark">
+                        <div class="highlight-icon">
+                            <a href="#"><img class="p-4 m-3" src="https://img.icons8.com/cotton/100/000000/hearts--v2.png"></a>
+                        </div>
 
+                    </div>
+                    <div class="col-sm-8 p-3 light" >
+                        <h2>Amenities</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <ul>
+                            <li>asdf</li>
+                            <li>asdf</li>
+                            <li>asdf</li>
+                        </ul>
+                        <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
                         <!-- <a href="https://icons8.com/icon/114008/heart-outline">Heart Outline icon by Icons8</a> -->
-                    </div>
-                    <div class="highlight">
-                        <a href="#rates"><img src="https://img.icons8.com/dusk/100/000000/coins.png"></a>
-                        <h4>Rates</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <a href="#rates">learn more</a></p>
-                        <!-- <a href="https://icons8.com/icon/42793/coins">Coins icon by Icons8</a> -->
-                    </div>
                 </div>
-                <div class="highlight-group">
-                    <div class="highlight">
-                        <a href="#"><img src="https://img.icons8.com/dusk/100/000000/signpost.png"></a>
-                        <h4>Location</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <a href="#">learn more</a></p>
+                <div class="row d-flex flex-row-reverse rounded my-3">
+                    <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center dark">
+                        <div class="highlight-icon">
+                            <a href="#"><img class="p-4 m-3" src="https://img.icons8.com/dusk/100/000000/signpost.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 p-3 light" >
+                        <h2>Explore</h2>
+                        <p>This section can give a brief explanation about being close to Portsmouth and the restaurants, museums, music as well as having the Kittery outlets nearby for shoppers. We can link to a page with other links to resources about different things if we want. For now this section is just letting everyone know it is a great location to park a boat.</p>
                         <!-- <a href="https://icons8.com/icon/46820/signpost">Signpost icon by Icons8</a> -->
                     </div>
-                    <div class="highlight">
-                        <a href="#"><img src="https://img.icons8.com/dusk/100/000000/document.png"></a>
-                        <h4>Applications and Policies</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <a href="#">learn more</a></p>
-                        <!-- <a href="https://icons8.com/icon/42795/document">Document icon by Icons8</a> -->
+                </div>
+                <div class="row mb-5 rounded">
+                    <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center dark">
+                        <div class="highlight-icon mb-2">
+                            <a href="#2"><img class="p-4 m-3"src="https://img.icons8.com/officel/100/000000/chance-of-storm.png"></a>
+                            <!-- <a href="https://icons8.com/icon/eizjCpCLqosR/stormy-weather">Stormy Weather icon by Icons8</a> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-8 p-3 light" >
+                        <h2>Local Conditions</h2>
+                        <div class="d-flex flex-column align-items-center">
+                            <div style="width: 300px;">
+                                <iframe style="display: block;" src="https://cdnres.willyweather.com/widget/loadView.html?id=119172" width="300" height="228" frameborder="0" scrolling="no">
+                                </iframe>
+                                <a style="height: 20px;display: block;margin: -20px 0 0 0;text-indent: -9999em;position: relative;z-index: 1" href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="nofollow" target="_blank">Piscataqua River-Badgers Island weather info</a></div>
+                                <a  class="link weather" href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="nofollow" target="_blank">Piscataqua Marina Weather Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- <div class="weather">
+                <div>
+                    <iframe style="display: block;" src="https://cdnres.willyweather.com/widget/loadView.html?id=119150" width="500" height="520" frameborder="0"  scrolling="no"></iframe>
+                </div>
+
+            </div>
+            <div id="2"></div>
             <div id="rates">
                 <h2>Rates</h2>
                 <div class="highlight-group rate-group">
@@ -115,12 +142,34 @@
                     </table>
                 </div>
 
-            </div>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.0823995563564!2d-70.75346204930547!3d43.0817629790427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2bf100c5a9c07%3A0xf3a64ad548c65dde!2sBadgers%20Island%20Marina!5e0!3m2!1sen!2sus!4v1579811561587!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
+            </div> -->
+
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.0823995563564!2d-70.75346204930547!3d43.0817629790427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2bf100c5a9c07%3A0xf3a64ad548c65dde!2sBadgers%20Island%20Marina!5e0!3m2!1sen!2sus!4v1579811561587!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
         <footer class="container-fluid">
+            <div class="footer-container d-flex flex-row justify-content-around">
+                <div class="footer-content mx-4 my-2">
+                    <h5>Piscataqua Marina</h5>
+                    <p>4 Island Ave.</p>
+                    <p>Kittery, ME 03904</p>
+                </div>
+                <div class="footer-content mx-4 my-2">
+                    <h5>Marina Main Office</h5>
+                    <p>14 Rice Ave.</p>
+                    <p>Suite 1</p>
+                    <p>Kittery, ME 03904</p>
+                </div>
+                <div class="footer-content mx-4 my-2">
+                    <h5>Contact</h5>
+                    <p><img src="images/phone.png" alt="phone">4 Island Ave.</p>
+                    <p>Kittery, ME 03904</p>
+                </div>
+            </div>
+            <div>
+                a website built by <a href="https://thorkuivanen.com/">Thor Kuivanen</a>
+            </div>
         </footer>
         <script
           src="https://code.jquery.com/jquery-3.4.1.min.js"

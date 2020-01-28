@@ -1,17 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto:700|Questrial|Rubik&display=swap');
+
+
+body{
+    background-color:#79AFDB;
+    font-family: 'Rubik', sans-serif;
+    color: #2F2F2F;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Questrial', sans-serif;
+}
+
+.btn{
+    font-family: 'Roboto', sans-serif;
+}
+/*
+=======
+Header and Nav Styling
+=======
+*/
 header.container-fluid{
     background-image: url('images/piscataqua_marina_fourth_of_july_fireworks.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-color: #434343;
+    background-color: #064273;
     height:700px;
     padding: 0;
 }
 
 header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -30,10 +51,18 @@ nav{
     transition: 1s;
 }
 
-nav a{
+.link{
     text-decoration: none;
     color:whitesmoke;
-    margin:20px 20px;
+    margin:20px 25px;
+    transition: .5s;
+}
+
+.link:hover{
+    text-decoration: none;
+    color:sandybrown;
+    /* filter:brightness(50%); */
+    transition: .2s;
 }
 
 .logo{
@@ -46,48 +75,107 @@ nav a{
     justify-content: space-between;
 }
 
-#hamburger{
-    display:none
+.nav-item{
+    transition:font-size 1s;
 }
 
+#hamburger{
+    display:none;
+    transition: .5s;
+}
+
+#hamburger:hover{
+    cursor: pointer;
+    filter:brightness(50%);
+    transition: .2s;
+}
+
+.cta-btn, .cta-btn:visited:focus{
+    margin: 0 20px;
+    color:#242424;
+    font-weight: bold;
+    background-color: #FC9C54;
+    border-color: #FC9C54;
+}
+
+.cta-btn:hover, .cta-btn:visited:hover{
+    color:ghostwhite;
+    background-color: #4B3D60;
+    border-color: #4B3D60;
+}
+
+.cta-btn:focus{
+    box-shadow: none;
+}
+
+/*
+=======
+Modal Menu
+=======
+*/
+.modal-content{
+    background-color:#064273;
+    color: ghostwhite;
+}
+
+.modal-header{
+    border-bottom: 2px solid #242424;
+}
+
+.modal-header h5{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.modal-content span{
+    color: ghostwhite;
+}
+
+.modal-body a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color:whitesmoke;
+    margin:20px;
+    transition: .5s;
+}
+
+.modal-body a:hover{
+    text-decoration: none;
+    color:sandybrown;
+    transition: .2s;
+}
 /*
 =======
 Main Container Styling
 =======
 */
-body{
-    background-color:wheat;
-}
-
-.highlight-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding:50px 0;
+.row{
+    overflow: hidden;
+    filter:drop-shadow(3px 3px 3px #3C6D78);
 
 }
 
-.highlight-group{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.highlight{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width:250px;
-    height:300px;
-    margin:10px;
-    padding: 15px;
-    background-color: cornsilk;
+.weather{
+    background-color: #3C6D78;
     border-radius: 10px;
+    padding: 5px 7px;
 }
 
-.highlight img{
-    width:80%;
+.weather:active{
+    transform: translateY(4px) scale(.98);
+}
+
+.dark{
+    background-color: #76b6c4;
+}
+
+.light{
+    background-color: #B3F1FF;
+}
+.highlight-icon{
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(222,243,246,1) 0%, rgba(255,255,255,0) 73%);
 }
 
 #rates{
@@ -95,8 +183,12 @@ body{
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 50px;
+    color:#333333;
 }
 
+#rates h2{
+    margin-left:5%;
+}
 
 .rate-explanation{
     width: 40%;
@@ -106,29 +198,74 @@ body{
 #rates table{
     max-width: 500px;
     margin: 0 15px;
+    color:#333333;
 }
 
+.map-container{
+    background-color: rgb(6,66,115);
+    }
+
+.map-container iframe{
+    filter: grayscale(80%) drop-shadow(0 -3px 3px #064273);
+}
+
+/*
+=======
+Footer Styling
+=======
+*/
 footer{
-    background-color: green;
-    height:100px;
+    text-align: center;
+    background-color: rgb(6,66,115);
 }
 
+
+.footer-content{
+    text-align: left;
+    color:lightgrey;
+}
+
+.footer-content p{
+    margin:0;
+}
+
+.footer-content img{
+    width:20px;
+}
+
+/*
+=======
+Screen size breakpoints styling
+=======
+*/
 @media only screen and (max-width: 1200px){
+    .rate-explanation{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
   /* Keeps layout looking ok as screen gets smaller */
+
+  .rate-explanation{
+      width: 100%;
+  }
 
   #rates table{
       font-size: 20px;
   }
 
   .highlight{
-      width: 350px;
+      width: 290px;
       height: 250px;
   }
 
   #rates h2{
       text-align: center;
+      margin-left:0;
   }
 }
+
 
 @media only screen and (max-width: 800px){
     .nav-links{
@@ -137,5 +274,15 @@ footer{
 
     #hamburger{
         display:block;
+    }
+
+    header {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .btn {
+        margin: 20px 0;
     }
 }
