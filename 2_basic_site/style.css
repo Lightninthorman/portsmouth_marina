@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto:700|Questrial|Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900|Questrial|Rubik|Cinzel+Decorative&display=swap');
 
 
 body{
@@ -8,12 +8,17 @@ body{
 }
 
 h1,h2,h3,h4,h5{
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
 }
+
+
+
 
 .btn{
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
+
 /*
 =======
 Header and Nav Styling
@@ -52,6 +57,7 @@ nav{
 }
 
 .link{
+    max-width: 160px;
     text-decoration: none;
     color:whitesmoke;
     margin:20px 25px;
@@ -71,7 +77,16 @@ nav{
 }
 
 .logo{
-    height: 100%;
+    height: 90%;
+    transition: .5s opacity;
+}
+.logo-top{
+    position:relative;
+}
+
+.logo-bottom{
+    position:absolute;
+    opacity:0;
 }
 
 .nav-links{
@@ -98,9 +113,10 @@ nav{
 }
 
 .cta-btn, .cta-btn:visited:focus{
+    font-size: 24px;
     margin: 0 20px;
     color:#404040;
-    font-weight: bold;
+    font-weight: 700;
     background-color: powderblue;
     border-color: powderblue;
 }
@@ -109,10 +125,12 @@ nav{
     color:#064273;
     background-color: #FC9C54;
     border-color: #FC9C54;
+    font-weight: 900;
 }
 
 .cta-btn:focus{
     box-shadow: none;
+
 }
 
 /*
@@ -130,7 +148,9 @@ Modal Menu
 }
 
 .modal-header h5{
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 35px;
+    letter-spacing: 2px;
 }
 
 .modal-content span{
@@ -165,12 +185,35 @@ Main Container Styling
 =======
 */
 
-.row{
-    overflow: hidden;
+.icon-container{
+    width:140px;
+    text-align: center;
+}
 
+.icon-container h4{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.link-icon{
+    width: 100%;
+    padding:20px;
+    border-radius: 50%;
+    background-color: rgba(244,164,96,.5);
+    transition: .5s;
+}
+
+.link-icon:hover{
+    transform: scale(1.1);
+}
+
+.category-heading{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 40px;
+    letter-spacing: 1px;
 }
 
 .weather{
+    text-align: center;
     background-color: #3C6D78;
     border-radius: 10px;
     padding: 5px 7px;
@@ -230,10 +273,25 @@ Footer Styling
 =======
 */
 footer{
+
     text-align: center;
     background-color: rgb(6,66,115);
 }
 
+footer h5{
+    font-family: 'Questrial', sans-serif;
+}
+
+.footer-container{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+.footer-content-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .footer-content{
     text-align: left;
@@ -257,6 +315,8 @@ Screen size breakpoints styling
     .rate-explanation{
         width: 30%;
     }
+
+
 }
 
 @media only screen and (max-width: 1000px){
@@ -279,7 +339,20 @@ Screen size breakpoints styling
       text-align: center;
       margin-left:0;
   }
+  .footer-content{
+      display:flex;
+      flex-flow: column wrap;
+      align-items: center;
+  }
+
+  .footer-content-box{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
 }
+
 
 
 @media only screen and (max-width: 800px){
