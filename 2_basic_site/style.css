@@ -77,8 +77,8 @@ nav{
 }
 
 .logo{
-    height: 90%;
-    transition: .5s opacity;
+    height: 100%;
+    transition: .5s ;
 }
 .logo-top{
     position:relative;
@@ -86,6 +86,7 @@ nav{
 
 .logo-bottom{
     position:absolute;
+    height: 90%;
     opacity:0;
 }
 
@@ -322,6 +323,12 @@ Screen size breakpoints styling
 @media only screen and (max-width: 1000px){
   /* Keeps layout looking ok as screen gets smaller */
 
+  .nav-item{
+      font-size: 20px;
+      margin:0;
+      padding: 0;
+  }
+
   .rate-explanation{
       width: 100%;
   }
@@ -356,7 +363,7 @@ Screen size breakpoints styling
 
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 830px){
     .nav-links{
         display: none;
     }
