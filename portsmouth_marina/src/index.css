@@ -1,13 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900|Questrial|Rubik|Cinzel+Decorative&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color:whitesmoke;
+  font-family: 'Rubik', sans-serif;
+  color: #2F2F2F;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.home-header{
+    background-image: url('/images/piscataqua_marina_fourth_of_july_fireworks.jpg');
+    height:700px;
+}
+
+.shared-header-settings{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #064273;
+    padding: 0;
+}
+
+.nav-bar{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:150px;
+    z-index: 2;
+    transition: 1s;
+}
+
+.nav-list{
+    display: inline-block;
+}
+
+.nav-item {
+    display:inline-block;
+    text-decoration: none;
+    margin:20px 25px;
+    background-size: 0 5px, auto;
+    background-image: linear-gradient(sandybrown, sandybrown);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: .5s;
+}
+
+.nav-item:hover{
+    text-decoration: none;
+    color:sandybrown;
+    background-size: 100% 5px, auto;
+    /* filter:brightness(50%); */
+    transition: .2s;
+}
+
+.nav-text{
+    font-family: 'Cinzel Decorative', cursive;
+    color:whitesmoke;
+    font-size: 26px;
+}
+
+.logo{
+    height:130px;
+    background-color:none;
+    
 }

@@ -24,8 +24,12 @@ h1,h2,h3,h4,h5{
 Header and Nav Styling
 =======
 */
-header.container-fluid{
+.main{
     background-image: url('images/piscataqua_marina_fourth_of_july_fireworks.jpg');
+    height:700px;
+}
+
+.main, .exploreHeader{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
