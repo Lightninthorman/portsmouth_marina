@@ -1,0 +1,166 @@
+.nav-bar{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:105px;
+    z-index: 100;
+}
+
+.nav-bar-background-hide{
+    background-color: transparent;
+    transition: .5s;
+}
+
+.nav-bar-background-show{
+    background-color: rgba(6,66,115,.8);
+    transition: .5s;
+    filter: drop-shadow(0 3px 3px #064273);
+}
+
+.nav-list{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width:100%;
+    transition: .5s;
+}
+
+.nav-item {
+    display:inline-block;
+    text-decoration: none;
+    margin:20px 25px;
+    background-size: 0 5px, auto;
+    background-image: linear-gradient(sandybrown, sandybrown);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: .5s;
+}
+
+.nav-item:hover, .nav-item:active{
+    text-decoration: none;
+    color:sandybrown;
+    background-size: 100% 5px, auto;
+    /* filter:brightness(50%); */
+    transition: .2s;
+}
+
+.nav-text{
+    font-family: 'Cinzel Decorative', cursive;
+    color:whitesmoke;
+}
+
+.nav-text-large{
+    font-size: 26px;
+    transition: .9s;
+}
+
+.nav-text-small{
+    font-size: 24px;
+    transition: .9s;
+}
+
+.logo-hide{
+    opacity:0;
+    transition: .9s;
+}
+
+.logo-show{
+    opacity:1;
+    transition: .9s;
+}
+
+.logo{
+    height:90px;
+    background-color:none;
+
+}
+
+.nav-hamburger{
+    display:none;
+    opacity:0;
+    transition: .9s;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    background-color:#064273;
+    color: ghostwhite;
+}
+
+.modal-header{
+    border-bottom: 2px solid #242424;
+}
+
+.modal-header h5{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-body-link{
+    text-decoration: none;
+    color:whitesmoke;
+    margin:10px;
+    background-size: 0 5px, auto;
+    background-image: linear-gradient(sandybrown, sandybrown);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: .5s;
+}
+
+.modal-body-link:hover{
+    text-decoration: none;
+    color:sandybrown;
+    background-size: 100% 5px, auto;
+    transition: .2s;
+}
+
+.modal-body-link h5{
+    font-size:26px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+/*
+=======
+Screen size breakpoints styling
+=======
+*/
+@media only screen and (max-width: 800px){
+  /* Keeps layout looking ok as screen gets smaller */
+
+  .nav-item{
+      font-size: 20px;
+      margin:0;
+      padding: 0;
+  }
+
+  .nav-list{
+      display:none;
+  }
+
+  .nav-hamburger{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 30px;
+      opacity:1;
+      cursor:pointer;
+      transition: .5s;
+  }
+
+  .nav-hamburger:hover, .nav-hamburger:active{
+      filter:brightness(50%);
+      transition: .2s;
+  }
+}
