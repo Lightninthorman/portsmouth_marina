@@ -1,27 +1,32 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
 
 
 function Home (props){
+
+    useEffect(() => {
+        console.log("re-render");
+        window.scrollTo(0,0);
+    });
 
     return(
         <>
         <main className="container-fluid">
             <div className="row d-flex flex-row justify-content-center align-items-baseline my-5">
                 <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5">
-                    <a className="link-icon" href="#"><img  src="images/Piscataqua_Marina_Rates_Icon.png" /></a>
+                    <Link to="/rates" className="link-icon"><img  src="images/Piscataqua_Marina_Rates_Icon.png" alt="Piscataqua Marina Dockage Rates"/></Link>
                     <h4>Rates</h4>
                 </div>
                 <div className="icon-container col-xs-3 d-flex flex-column align-items-center  mx-5">
-                    <a className="link-icon" href="#"><img src="images/Piscataqua_Marina_Weather_Icon.png" /></a>
+                    <a className="link-icon" href="#weather"><img src="images/Piscataqua_Marina_Weather_Icon.png" alt="Piscataqua Marina Weather Conditions"/></a>
                     <h4>Weather Conditions</h4>
                 </div>
                 <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5">
-                    <a className="link-icon" href="#"><img src="images/Piscataqua_Marina_Application_Icon.png" /></a>
-                    <h4>Applications & Policies</h4>
+                    <Link className="link-icon" to="/explore"><img src="images/Piscataqua_Marina_Explore_Icon.png" alt="Piscataqua Marina Explore"/></Link>
+                    <h4>Explore</h4>
                 </div>
                 <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5">
-                    <a className="link-icon" href="#"><img src="images/Piscataqua_Marina_Contact_Icon.png" /></a>
+                    <a className="link-icon" href="#"><img src="images/Piscataqua_Marina_Contact_Icon.png" alt="Piscataqua Marina Contact"/></a>
                     <h4>Contact</h4>
                 </div>
             </div>
@@ -29,7 +34,7 @@ function Home (props){
 
             <div className="row d-flex flex-row-reverse mt-5 dark">
                 <div className="col-md-5 d-flex flex-column align-items-center justify-content-center">
-                    <img className="w-100 m-2 rounded" src="/images/piscataqua_marina_aerial_with_badgers_island.jpg" />
+                    <img className="w-100 m-2 rounded" src="/images/piscataqua_marina_aerial_with_badgers_island.jpg" alt="Piscataqua_Marina_Aerial_View_with_Badgers_Island" />
 
                 </div>
                 <div className="col-md-7 py-4 px-5" >
@@ -40,7 +45,7 @@ function Home (props){
             </div>
             <div className="row light ">
                 <div className="col-md-5 d-flex flex-column align-items-center justify-content-center">
-                        <img className="w-100 m-3 rounded" src="images/piscataqua_marina_ameneties.jpg" />
+                        <img className="w-100 m-3 rounded" src="images/piscataqua_marina_ameneties.jpg" alt="Piscataqua_Marina_Ameneties"/>
                 </div>
                 <div className="col-md-7 py-4 px-5" >
                     <h2 className="category-heading">Amenities</h2>
@@ -62,14 +67,14 @@ function Home (props){
             </div>
             <div className="row d-flex flex-row-reverse dark">
                 <div className="col-md-5 d-flex flex-column align-items-center justify-content-center">
-                    <img className="w-100 m-2 rounded" src="images/piscataqua_marina_aerial_with_portsmouth.jpg" />
+                    <img className="w-100 m-2 rounded" src="images/piscataqua_marina_aerial_with_portsmouth.jpg" alt="Piscataqua_Marina_Aerial_View_with_Portsmouth_NH"/>
 
                 </div>
                 <div className="col-md-7 py-4 px-5" >
                     <h2 className="category-heading">Explore</h2>
                     <p>Our small, 27 slip marina offers a true family atmosphere.  A short walk across the Memorial Bridge puts you in the middle of historic downtown Portsmouth.  Listen to concerts in Prescott Park directly across the river.  Fine dining and nightlife is within walking distance in Portsmouth and Kittery Foreside.
                     </p>
-                    <Link to="/explore"  className="nav-item home-page-btn mt-0" >See What's Nearby</Link>
+                    <Link to="/explore" id="weather" className="nav-item home-page-btn mt-0" >See What's Nearby</Link>
                     <p>
                     Come for a visit and see for yourself what a great spot we have!
                     </p>
@@ -78,7 +83,7 @@ function Home (props){
             </div>
             <div className="row light">
                 <div className="col-md-5 d-flex flex-column align-items-center justify-content-center">
-                <img className="w-100 m-3 rounded"src="images/piscataqua_marina_aerial_picnic_area.jpg" />
+                <img className="w-100 m-3 rounded"src="images/piscataqua_marina_aerial_picnic_area.jpg" alt="Piscataqua_Marina_Picnic_Area"/>
                 </div>
                 <div className="col-md-7 py-4 px-5" >
                     <h2 className="category-heading">Local Conditions</h2>
@@ -92,7 +97,12 @@ function Home (props){
                     </div>
                 </div>
             </div>
+
         </main>
+        <div className="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.0823995563564!2d-70.75346204930547!3d43.0817629790427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2bf100c5a9c07%3A0xf3a64ad548c65dde!2sBadgers%20Island%20Marina!5e0!3m2!1sen!2sus!4v1579811561587!5m2!1sen!2sus" frameBorder="0" allowFullScreen=""></iframe>
+        </div>
+
         </>
     )
 }

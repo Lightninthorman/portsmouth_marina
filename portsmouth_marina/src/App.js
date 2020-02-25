@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,14 +8,10 @@ import {
 import Header from './Header.js';
 import Home from './Home.js';
 import Explore from './Explore.js';
+import Rates from './Rates.js';
 import Footer from './Footer.js';
 
 function App() {
-
-    useEffect(() => {
-        console.log("re-render");
-        window.scrollTo(0,0);
-    });
 
   return (
     <Router>
@@ -29,6 +25,10 @@ function App() {
             <Route exact path="/explore">
                 <Header headerName={"explore"} />
                 <Explore />
+            </Route>
+            <Route exact path="/rates">
+                <Header headerName={"rates"} />
+                <Rates />
             </Route>
           </Switch>
           <Footer />

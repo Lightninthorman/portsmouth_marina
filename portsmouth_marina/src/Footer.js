@@ -36,7 +36,7 @@ function Footer (props){
             </div>
 
             <div>
-                a website built by <a href="https://thorkuivanen.com/">Thor Kuivanen</a>
+                a website built by <a href="https://thorkuivanen.com/">Thor Kuivanen</a> - icons from <a href="https://icons8.com/icons">icons8.com</a>
             </div>
         </footer>
     )

@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  background-color:whitesmoke;
+  background-color:#ecede7;
   font-family: 'Rubik', sans-serif;
   color: #2F2F2F;
 
@@ -34,6 +34,10 @@ code {
 }
 
 .explore-header{
+    background-image: url('/images/billy-hayes-il8W_r4AeSM-unsplash.jpg');
+    height:400px;
+}
+.rates-header{
     background-image: url('/images/billy-hayes-il8W_r4AeSM-unsplash.jpg');
     height:400px;
 }
@@ -82,6 +86,7 @@ header h1 span{
 
 .icon-container h4{
     font-family: 'Cinzel Decorative', cursive;
+    margin:8px 0 0 0;
 
 }
 
@@ -154,6 +159,17 @@ header h1 span{
     filter: grayscale(80%) drop-shadow(0 -3px 3px #064273);
 }
 
+.map-container{
+    background-color: rgb(6,66,115);
+    }
+
+.map-container iframe{
+    filter: grayscale(80%) drop-shadow(0 -3px 3px #064273);
+    border:0;
+    width:100%;
+    height:450px;
+}
+
 /*
 =======
 Explore Page
@@ -161,19 +177,62 @@ Explore Page
 */
 
 .explore-location{
+    margin-top: 40px;
     width: 50%;
     border-bottom: 1px solid silver;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.explore-location-description{
+    margin-top: 20px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
 }
 
 .explore-item{
+    border-radius: 10px;
     margin:10px;
     padding:10px;
-    border: 1px solid black;
+    background-color: whitesmoke;
+    filter:drop-shadow(2px 2px 4px dimgray);
+    font-family: 'Questrial', sans-serif;
 }
 
-.explore-item img{
-    width:100%;
+.explore-item h5{
+    font-family: 'Cinzel Decorative', cursive;
 }
+
+.explore-item a{
+    color:black;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.explore-item a:hover{
+    transform: scale(1.05);
+    color: dimgray;
+    filter:grayscale(50%);
+    text-decoration: none;
+
+}
+
+.explore-item a:active{
+    color: dimgray;
+    filter:grayscale(50%);
+    text-decoration: none;
+
+}
+.explore-item img{
+    width:90%;
+}
+
+/*
+=======
+Rates Styling
+=======
+*/
+
+
 
 /*
 =======
@@ -233,23 +292,7 @@ Screen size breakpoints styling
   /* Keeps layout looking ok as screen gets smaller */
 
 
-  .rate-explanation{
-      width: 100%;
-  }
-
-  #rates table{
-      font-size: 20px;
-  }
-
-  .highlight{
-      width: 290px;
-      height: 250px;
-  }
-
-  #rates h2{
-      text-align: center;
-      margin-left:0;
-  }
+  
   .footer-content{
       display:flex;
       flex-flow: column wrap;
@@ -270,4 +313,5 @@ Screen size breakpoints styling
         width:50%;
         margin-right:5%;
     }
+
 }
