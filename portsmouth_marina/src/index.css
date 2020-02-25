@@ -329,6 +329,10 @@ Screen size breakpoints styling
 }
 
 @media only screen and (max-width: 767px){
+    .home-header, .rates-header{
+        background-attachment: local;
+    }
+
     .explore-item img{
         width:50%;
         margin-right:5%;

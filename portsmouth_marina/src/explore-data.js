@@ -59,7 +59,7 @@ const exploreData =
         },
         {
             name: "Rudders Public House",
-            image: "/images/explore/rudders.webp",
+            image: "/images/explore/rudders.jpg",
             description: "Bar fare. 'A great time in the Foreside.'",
             link:"https://www.rudderspublichouse.com/"
         },
