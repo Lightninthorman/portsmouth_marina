@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Modal from 'react-bootstrap/Modal';
+import {Link} from "react-router-dom";
 
 
 function NavBar (props){
@@ -42,11 +43,11 @@ function NavBar (props){
     return(
 
         <nav className={navBarClass + " nav-bar"} >
-            <img className={imgClass + " logo"} src="/images/Piscataqua_Marina_logo_White.png" alt="Piscataqua_Marina_logo_White" onClick={alert}/>
+            <Link to="/"><img className={imgClass + " logo"} src="/images/Piscataqua_Marina_logo_White.png" alt="Piscataqua_Marina_logo_White"/></Link>
             <div className="nav-list">
-                <a className="nav-item"  href="#"><h5 className={navText + " nav-text"}>About</h5></a>
+                <Link to="/" className="nav-item"><h5 className={navText + " nav-text"}>Home</h5></Link>
                 <a className="nav-item" href="#1"><h5 className={navText + " nav-text"}>Rates</h5></a>
-                <a className="nav-item" href="explore.html"><h5 className={navText + " nav-text"}>Explore</h5></a>
+                <Link className="nav-item" to="/explore" ><h5 className={navText + " nav-text"}>Explore</h5></Link>
                 <a className="nav-item" href="#"><h5 className={navText + " nav-text"}>Contact</h5></a>
             </div>
             <div className="nav-hamburger">

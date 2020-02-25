@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900|Questrial|Rubik|Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial|Rubik|Cinzel+Decorative:400,700&display=swap');
 @import url('navigation.css');
 
 body {
@@ -14,10 +14,7 @@ code {
     monospace;
 }
 
-.home-header{
-    background-image: url('/images/piscataqua_marina_fourth_of_july_fireworks.jpg');
-    height:700px;
-}
+
 
 .shared-header-settings{
     position: relative;
@@ -31,14 +28,32 @@ code {
     padding: 0;
 }
 
-header h1{
-    font-family: 'Cinzel Decorative', cursive;
-    color:whitesmoke;
-    font-size: 50px;
+.home-header{
+    background-image: url('/images/piscataqua_marina_fourth_of_july_fireworks.jpg');
+    height:700px;
 }
 
-.header-logo-placement{
+.explore-header{
+    background-image: url('/images/billy-hayes-il8W_r4AeSM-unsplash.jpg');
+    height:400px;
+}
+
+header h1{
+    font-family: 'Cinzel Decorative', cursive;
+    color:#064273;
+    font-size: 50px;
+    filter:drop-shadow(4px 4px 2px dimgray);
     width:350px;
+    font-weight:700;
+
+}
+header h1 span{
+    line-height: 1.8;
+}
+
+
+.header-logo-placement{
+    width:365px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,7 +66,6 @@ header h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter:drop-shadow(3px 3px 3px #064273);
     z-index:2;
 
 }
@@ -142,6 +156,27 @@ header h1{
 
 /*
 =======
+Explore Page
+=======
+*/
+
+.explore-location{
+    width: 50%;
+    border-bottom: 1px solid silver;
+}
+
+.explore-item{
+    margin:10px;
+    padding:10px;
+    border: 1px solid black;
+}
+
+.explore-item img{
+    width:100%;
+}
+
+/*
+=======
 Footer Styling
 =======
 */
@@ -178,6 +213,8 @@ footer h5{
 .footer-content a {
     color:lightgrey;
 }
+
+
 
 /*
 =======
@@ -226,4 +263,11 @@ Screen size breakpoints styling
       justify-content: flex-start;
   }
 
+}
+
+@media only screen and (max-width: 767px){
+    .explore-item img{
+        width:50%;
+        margin-right:5%;
+    }
 }

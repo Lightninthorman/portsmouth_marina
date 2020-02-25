@@ -1,13 +1,16 @@
 import React, {useState,useEffect} from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import Header from './Header.js';
 import Home from './Home.js';
+import Explore from './Explore.js';
 import Footer from './Footer.js';
 
 function App() {
-    var [header, setHeader] = useState("home-header");
-
-
-
 
     useEffect(() => {
         console.log("re-render");
@@ -15,12 +18,23 @@ function App() {
     });
 
   return (
-    <div className="App">
-      <Header headerName={header} />
-      <Home />
-      <Footer />
+    <Router>
+        <div className="App">
 
-    </div>
+          <Switch>
+            <Route exact path="/">
+                <Header headerName={"home"} />
+                <Home />
+            </Route>
+            <Route exact path="/explore">
+                <Header headerName={"explore"} />
+                <Explore />
+            </Route>
+          </Switch>
+          <Footer />
+
+        </div>
+    </Router>
   );
 }
 

@@ -1,9 +1,11 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 
 function Home (props){
 
     return(
+        <>
         <main className="container-fluid">
             <div className="row d-flex flex-row justify-content-center align-items-baseline my-5">
                 <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5">
@@ -27,7 +29,7 @@ function Home (props){
 
             <div className="row d-flex flex-row-reverse mt-5 dark">
                 <div className="col-md-5 d-flex flex-column align-items-center justify-content-center">
-                    <img className="w-100 m-2 rounded" src="images/piscataqua_marina_aerial_with_portsmouth.jpg" />
+                    <img className="w-100 m-2 rounded" src="/images/piscataqua_marina_aerial_with_badgers_island.jpg" />
 
                 </div>
                 <div className="col-md-7 py-4 px-5" >
@@ -67,7 +69,7 @@ function Home (props){
                     <h2 className="category-heading">Explore</h2>
                     <p>Our small, 27 slip marina offers a true family atmosphere.  A short walk across the Memorial Bridge puts you in the middle of historic downtown Portsmouth.  Listen to concerts in Prescott Park directly across the river.  Fine dining and nightlife is within walking distance in Portsmouth and Kittery Foreside.
                     </p>
-                    <a  className="nav-item home-page-btn mt-0" href="#" >See What's Nearby</a>
+                    <Link to="/explore"  className="nav-item home-page-btn mt-0" >See What's Nearby</Link>
                     <p>
                     Come for a visit and see for yourself what a great spot we have!
                     </p>
@@ -84,13 +86,14 @@ function Home (props){
                         <div className="weather-container">
                             <iframe src="https://cdnres.willyweather.com/widget/loadView.html?id=119172" frameBorder="0" scrolling="no">
                             </iframe>
-                            <a className="weather-widget-link"  href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="nofollow" target="_blank">Piscataqua River-Badgers Island weather info</a>
+                            <a className="weather-widget-link"  href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="noopener noreferrer"  target="_blank">Piscataqua River-Badgers Island weather info</a>
                         </div>
-                            <a  className="nav-item home-page-btn" href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="nofollow" target="_blank">Piscataqua Marina Weather Details</a>
+                            <a  className="nav-item home-page-btn" href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="nofollow" target="_blank" rel="noopener noreferrer" >Piscataqua Marina Weather Details</a>
                     </div>
                 </div>
             </div>
         </main>
+        </>
     )
 }
 

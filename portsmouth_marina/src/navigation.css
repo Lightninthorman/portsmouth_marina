@@ -47,7 +47,6 @@
     text-decoration: none;
     color:sandybrown;
     background-size: 100% 5px, auto;
-    /* filter:brightness(50%); */
     transition: .2s;
 }
 
