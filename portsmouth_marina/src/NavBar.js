@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Modal from 'react-bootstrap/Modal';
 import {Link} from "react-router-dom";
 
@@ -46,9 +46,9 @@ function NavBar (props){
             <Link to="/"><img className={imgClass + " logo"} src="/images/Piscataqua_Marina_logo_White.png" alt="Piscataqua_Marina_logo_White"/></Link>
             <div className="nav-list">
                 <Link to="/" className="nav-item"><h5 className={navText + " nav-text"}>Home</h5></Link>
-                <a className="nav-item" href="#1"><h5 className={navText + " nav-text"}>Rates</h5></a>
+                <Link className="nav-item" to="/rates"><h5 className={navText + " nav-text"}>Rates</h5></Link>
                 <Link className="nav-item" to="/explore" ><h5 className={navText + " nav-text"}>Explore</h5></Link>
-                <a className="nav-item" href="#"><h5 className={navText + " nav-text"}>Contact</h5></a>
+                <Link className="nav-item" to="/contact"><h5 className={navText + " nav-text"}>Contact</h5></Link>
             </div>
             <div className="nav-hamburger">
                 <img src="images/hamburger_icon_1.png" alt="humburger_menu_icon" onClick={handleShow}/>
@@ -59,10 +59,10 @@ function NavBar (props){
                     <Modal.Title><h5>Piscataqua Marina</h5></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <a href="#1" onClick={handleClose} className="modal-body-link"><h5>About</h5></a>
-                    <a href="#2" onClick={handleClose} className="modal-body-link"><h5>Rates</h5></a>
-                    <a href="explore.html" onClick={handleClose} className="modal-body-link"><h5>Explore</h5></a>
-                    <a href="#4" onClick={handleClose} className="modal-body-link"><h5>Contact</h5></a>
+                    <Link to="/" onClick={handleClose} className="modal-body-link"><h5>Home</h5></Link>
+                    <Link to="/rates" onClick={handleClose} className="modal-body-link"><h5>Rates</h5></Link>
+                    <Link to="/explore" onClick={handleClose} className="modal-body-link"><h5>Explore</h5></Link>
+                    <Link to="/contact" onClick={handleClose} className="modal-body-link"><h5>Contact</h5></Link>
                 </Modal.Body>
                 <Modal.Footer>
                   <button variant="secondary" onClick={handleClose}>

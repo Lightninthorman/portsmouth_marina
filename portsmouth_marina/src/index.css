@@ -36,10 +36,17 @@ code {
 .explore-header{
     background-image: url('/images/billy-hayes-il8W_r4AeSM-unsplash.jpg');
     height:400px;
+    background-attachment: local;
 }
 .rates-header{
-    background-image: url('/images/billy-hayes-il8W_r4AeSM-unsplash.jpg');
+    background-image: url('/images/jorge-vasconez-LCaKuYefLQk-unsplash.jpg');
     height:400px;
+}
+
+.contact-header{
+    background-image: url('/images/patrick-konig-E_-yQcS6qm8-unsplash.jpg');
+    height:400px;
+    background-attachment: local;
 }
 
 header h1{
@@ -231,9 +238,29 @@ Explore Page
 Rates Styling
 =======
 */
+.table{
+    margin: 0 auto;
+}
+/*
+=======
+contact Styling
+=======
+*/
+.contact-main{
+    margin:30px 0;
+}
 
+.contact-container img{
+    width:20px;
+}
 
+.contact-container a{
+    display:block;
+}
 
+.contact-location address{
+
+}
 /*
 =======
 Footer Styling
@@ -280,19 +307,12 @@ footer h5{
 Screen size breakpoints styling
 =======
 */
-@media only screen and (max-width: 1200px){
-    .rate-explanation{
-        width: 30%;
-    }
 
-
-}
-
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1025px){
   /* Keeps layout looking ok as screen gets smaller */
 
 
-  
+
   .footer-content{
       display:flex;
       flex-flow: column wrap;
@@ -312,6 +332,10 @@ Screen size breakpoints styling
     .explore-item img{
         width:50%;
         margin-right:5%;
+    }
+
+    .contact-container img{
+        width: 20px;
     }
 
 }

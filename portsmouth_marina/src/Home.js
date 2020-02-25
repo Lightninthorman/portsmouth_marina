@@ -26,7 +26,7 @@ function Home (props){
                     <h4>Explore</h4>
                 </div>
                 <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5">
-                    <a className="link-icon" href="#"><img src="images/Piscataqua_Marina_Contact_Icon.png" alt="Piscataqua Marina Contact"/></a>
+                    <Link className="link-icon" to="/contact"><img src="images/Piscataqua_Marina_Contact_Icon.png" alt="Piscataqua Marina Contact"/></Link>
                     <h4>Contact</h4>
                 </div>
             </div>
@@ -89,7 +89,7 @@ function Home (props){
                     <h2 className="category-heading">Local Conditions</h2>
                     <div className="d-flex flex-column align-items-center">
                         <div className="weather-container">
-                            <iframe src="https://cdnres.willyweather.com/widget/loadView.html?id=119172" frameBorder="0" scrolling="no">
+                            <iframe title="weather-widget" src="https://cdnres.willyweather.com/widget/loadView.html?id=119172" frameBorder="0" scrolling="no">
                             </iframe>
                             <a className="weather-widget-link"  href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="noopener noreferrer"  target="_blank">Piscataqua River-Badgers Island weather info</a>
                         </div>
@@ -100,7 +100,7 @@ function Home (props){
 
         </main>
         <div className="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.0823995563564!2d-70.75346204930547!3d43.0817629790427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2bf100c5a9c07%3A0xf3a64ad548c65dde!2sBadgers%20Island%20Marina!5e0!3m2!1sen!2sus!4v1579811561587!5m2!1sen!2sus" frameBorder="0" allowFullScreen=""></iframe>
+            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.0823995563564!2d-70.75346204930547!3d43.0817629790427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2bf100c5a9c07%3A0xf3a64ad548c65dde!2sBadgers%20Island%20Marina!5e0!3m2!1sen!2sus!4v1579811561587!5m2!1sen!2sus" frameBorder="0" allowFullScreen=""></iframe>
         </div>
 
         </>

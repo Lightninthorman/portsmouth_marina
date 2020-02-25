@@ -2,13 +2,13 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Header from './Header.js';
 import Home from './Home.js';
 import Explore from './Explore.js';
 import Rates from './Rates.js';
+import Contact from './Contact.js';
 import Footer from './Footer.js';
 
 function App() {
@@ -29,6 +29,10 @@ function App() {
             <Route exact path="/rates">
                 <Header headerName={"rates"} />
                 <Rates />
+            </Route>
+            <Route exact path="/contact">
+                <Header headerName={"contact"} />
+                <Contact />
             </Route>
           </Switch>
           <Footer />

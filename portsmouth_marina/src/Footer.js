@@ -7,30 +7,30 @@ function Footer (props){
         <footer className="container-fluid">
             <div className="footer-container">
                 <div className="footer-content-box">
-                    <div className="footer-content mx-4 my-3">
+                    <address className="footer-content mx-4 my-3">
                         <h5>Piscataqua Marina</h5>
                         <p>4 Island Ave.</p>
                         <p>Kittery, ME 03904</p>
                         <p>43.085⁰N,  70.752⁰W</p>
 
-                    </div>
-                    <div className="footer-content mx-4 my-3">
+                    </address>
+                    <address className="footer-content mx-4 my-3">
                         <h5>Main Office</h5>
                         <p>14 Rice Ave.</p>
                         <p>Suite #1</p>
                         <p>Kittery, ME 03904</p>
-                    </div>
+                    </address>
                 </div>
                 <div className="footer-content-box">
                     <div className="footer-content mx-4 my-3">
                         <h5>Docmaster</h5>
                         <a href="tel:207-439-1661"><img src="images/phone.png" alt="phone" /> (207)-439-1661</a>
-                        <p><img src="images/email.png" alt="email" /> David@PiscataquaMarina.com</p>
+                        <p><a href="mailto:David@PiscataquaMarina.com"><img src="images/email.png" alt="email" /> David@PiscataquaMarina.com</a></p>
                         <p>VHF Ch 9 or 13</p>
                     </div>
                     <div className="footer-content mx-4 my-3">
                         <h5>Owner</h5>
-                        <p><img src="images/email.png" alt="email" /> Drew@PiscataquaMarina.com</p>
+                        <p><a href="mailto:Drew@PiscataquaMarina.com"><img src="images/email.png" alt="email" /> Drew@PiscataquaMarina.com</a></p>
                     </div>
                 </div>
             </div>

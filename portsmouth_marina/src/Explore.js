@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import exploreData from './explore-data.js'
 
 function Explore (){
+
+    useEffect(() => {
+        console.log("re-render");
+        window.scrollTo(0,0);
+    });
 
     return(
         <main className="container-fluid">
@@ -11,7 +16,7 @@ function Explore (){
             </p>
         </div>
             <div className="explore-location">
-                <h2>Badger's Island Area</h2>
+                <h2>Badger's Island</h2>
             </div>
             <div className="explore-location-description">
                 <p>

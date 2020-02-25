@@ -1,37 +1,72 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 
 function Rates (props){
 
+    useEffect(() => {
+        console.log("re-render");
+        window.scrollTo(0,0);
+    });
 
     return(
         <main className="container">
-            <table className="table table-striped" >
+            <div className="explore-location-description">
+                <p>
+                    We offer seasonal slips for winter and summer.  Our summer season runs May 15th to October 15th.  Please contact us for pricing and availability.
+                </p>
+                <p>
+                    Transient docking is also available at the following rate:
+                </p>
+            </div>
+            <table className="table table table-striped w-50" >
               <thead>
                 <tr>
-                  <th scope="col">Service</th>
+                  <th scope="col">Vessel Size</th>
                   <th scope="col">Price</th>
-                  <th scope="col">Duration</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Transient</td>
-                  <td>$50 / ft</td>
-                  <td>Daily. Max 1 week.</td>
+                  <td>Up to 40’</td>
+                  <td>$3/loa</td>
                 </tr>
                 <tr>
-                  <td>Winter Slip</td>
-                  <td>$1000</td>
-                  <td>October - April</td>
+                  <td>40-70’</td>
+                  <td>$4/loa</td>
                 </tr>
                 <tr>
-                  <td>Summer Slip</td>
-                  <td>$25000</td>
-                  <td>May - September</td>
+                  <td>70’+</td>
+                  <td>$5/loa</td>
                 </tr>
               </tbody>
             </table>
+            <br />
+
+            <div className="explore-location-description">
+                <p>
+                    Electrical Service
+                </p>
+            </div>
+
+            <table className="table table table-striped w-50" >
+              <thead>
+                <tr>
+                  <th scope="col">Service</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Single 30 amp</td>
+                  <td>$10/day</td>
+                </tr>
+                <tr>
+                  <td>Double 30 or single 50</td>
+                  <td>$20/day</td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
         </main>
     )
 }

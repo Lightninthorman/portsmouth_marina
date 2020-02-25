@@ -19,7 +19,7 @@ function Header (props){
     return(
         <header className={props.headerName + "-header shared-header-settings"}>
             <NavBar />
-            <img src='/images/Piscataqua_Marina_logo_no_words.png' className="header-logo-placement"/>
+            <img src='/images/Piscataqua_Marina_logo_no_words.png' alt="Piscataqua_Marina_logo_no_words" className="header-logo-placement"/>
             {headerTitle()}
         </header>
     )
