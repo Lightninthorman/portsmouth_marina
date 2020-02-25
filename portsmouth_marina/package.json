@@ -1,5 +1,6 @@
 {
   "name": "portsmouth_marina",
+  "homepage":"http://piscataquamarina.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
