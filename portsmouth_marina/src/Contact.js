@@ -9,7 +9,7 @@ function Contact (props){
     });
 
     return(
-        <main className="container contact-main">
+        <main className="container my-5">
 
         <div className="row justify-content-center">
             <div className="explore-item contact-container col-md-4 ">

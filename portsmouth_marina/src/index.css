@@ -108,6 +108,14 @@ header h1 span{
     transform: scale(1.1);
 }
 
+#badger-island-view{
+    width:400px;
+}
+
+.home-item-image{
+    width:100%;
+}
+
 .category-heading{
     font-family: 'Cinzel Decorative', cursive;
     font-size: 40px;
@@ -246,10 +254,6 @@ Rates Styling
 contact Styling
 =======
 */
-.contact-main{
-    margin:30px 0;
-}
-
 .contact-container img{
     width:20px;
 }
@@ -258,9 +262,6 @@ contact Styling
     display:block;
 }
 
-.contact-location address{
-
-}
 /*
 =======
 Footer Styling
@@ -311,7 +312,9 @@ Screen size breakpoints styling
 @media only screen and (max-width: 1025px){
   /* Keeps layout looking ok as screen gets smaller */
 
-
+  #badger-island-view{
+      width:100%;
+  }
 
   .footer-content{
       display:flex;
@@ -333,6 +336,11 @@ Screen size breakpoints styling
         background-attachment: local;
     }
 
+    #badger-island-view, .home-item-image{
+        width:370px;
+    }
+
+
     .explore-item img{
         width:50%;
         margin-right:5%;
@@ -341,5 +349,10 @@ Screen size breakpoints styling
     .contact-container img{
         width: 20px;
     }
+}
 
+@media only screen and (max-width: 600px){
+    #badger-island-view, .home-item-image{
+        width:100%;
+    }
 }

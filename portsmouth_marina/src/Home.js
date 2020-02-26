@@ -34,7 +34,7 @@ function Home (props){
 
             <div className="row d-flex flex-row-reverse mt-5 dark">
                 <div className="col-md-5 d-flex flex-column align-items-center justify-content-center">
-                    <img className="w-100 m-2 rounded" src="/images/piscataqua_marina_aerial_with_badgers_island.jpg" alt="Piscataqua_Marina_Aerial_View_with_Badgers_Island" />
+                    <img id="badger-island-view" className="home-item-image m-2 rounded" src="/images/piscataqua_marina_aerial_with_badgers_island.jpg" alt="Piscataqua_Marina_Aerial_View_with_Badgers_Island" />
 
                 </div>
                 <div className="col-md-7 py-4 px-5" >
@@ -45,7 +45,7 @@ function Home (props){
             </div>
             <div className="row light ">
                 <div className="col-md-5 d-flex flex-column align-items-center justify-content-center">
-                        <img className="w-100 m-3 rounded" src="images/piscataqua_marina_ameneties.jpg" alt="Piscataqua_Marina_Ameneties"/>
+                        <img className="home-item-image m-3 rounded" src="images/piscataqua_marina_ameneties.jpg" alt="Piscataqua_Marina_Ameneties"/>
                 </div>
                 <div className="col-md-7 py-4 px-5" >
                     <h2 className="category-heading">Amenities</h2>
@@ -67,7 +67,7 @@ function Home (props){
             </div>
             <div className="row d-flex flex-row-reverse dark">
                 <div className="col-md-5 d-flex flex-column align-items-center justify-content-center">
-                    <img className="w-100 m-2 rounded" src="images/piscataqua_marina_aerial_with_portsmouth.jpg" alt="Piscataqua_Marina_Aerial_View_with_Portsmouth_NH"/>
+                    <img className="home-item-image m-2 rounded" src="images/piscataqua_marina_aerial_with_portsmouth.jpg" alt="Piscataqua_Marina_Aerial_View_with_Portsmouth_NH"/>
 
                 </div>
                 <div className="col-md-7 py-4 px-5" >
@@ -83,7 +83,7 @@ function Home (props){
             </div>
             <div className="row light">
                 <div className="col-md-5 d-flex flex-column align-items-center justify-content-center">
-                <img className="w-100 m-3 rounded"src="images/piscataqua_marina_aerial_picnic_area.jpg" alt="Piscataqua_Marina_Picnic_Area"/>
+                <img className="home-item-image m-3 rounded"src="images/piscataqua_marina_aerial_picnic_area.jpg" alt="Piscataqua_Marina_Picnic_Area"/>
                 </div>
                 <div className="col-md-7 py-4 px-5" >
                     <h2 className="category-heading">Local Conditions</h2>
