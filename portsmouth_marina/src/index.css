@@ -157,6 +157,10 @@ header h1 span{
     background-color: #B3F1FF;
 }
 
+.underline{
+    border-bottom: 1px solid silver;
+}
+
 .highlight-icon{
     border-radius: 50%;
     background: radial-gradient(circle, rgba(222,243,246,1) 0%, rgba(255,255,255,0) 70%);
@@ -194,7 +198,6 @@ Explore Page
 .explore-location{
     margin-top: 40px;
     width: 50%;
-    border-bottom: 1px solid silver;
     font-family: 'Cinzel Decorative', cursive;
 }
 

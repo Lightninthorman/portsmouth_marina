@@ -4,7 +4,6 @@ import exploreData from './explore-data.js'
 function Explore (){
 
     useEffect(() => {
-        console.log("re-render");
         window.scrollTo(0,0);
     });
 
@@ -15,7 +14,7 @@ function Explore (){
                 While Portsmouth and the Kittery outlets are extremely close to the marina, there's fun to be had even closer. As soon as you step off the dock you're less than a mile from a wide variety of restaurants, shopping, and coastal beauty.
             </p>
         </div>
-            <div className="explore-location">
+            <div className="explore-location underline">
                 <h2>Badger's Island</h2>
             </div>
             <div className="explore-location-description">
@@ -27,7 +26,7 @@ function Explore (){
                 {exploreData.badgersIsland.map((place, key) => {
                     return(
                         <div className="explore-item col-md-3 " key={key}>
-                            <a className="d-flex flex-column align-items-center" href={place.link} rel="nofollow" target="_blank" rel="noopener noreferrer">
+                            <a className="d-flex flex-column align-items-center" href={place.link} target="_blank" rel="noopener noreferrer">
                                 <h5>{place.name}</h5>
                                 <img src={place.image} alt={place.name}/>
                                 <p>
@@ -38,7 +37,7 @@ function Explore (){
                     )
                 })}
             </div>
-            <div className="explore-location">
+            <div className="explore-location underline">
                 <h2>Kittery Foreside</h2>
             </div>
             <div className="explore-location-description">
@@ -50,7 +49,7 @@ function Explore (){
                 {exploreData.kittery.map((place, key) => {
                     return(
                         <div className="explore-item col-md-3" key={key}>
-                            <a className="d-flex flex-column align-items-center" href={place.link} rel="nofollow" target="_blank" rel="noopener noreferrer">
+                            <a className="d-flex flex-column align-items-center" href={place.link} target="_blank" rel="noopener noreferrer">
                                 <h5>{place.name}</h5>
                                 <img src={place.image} alt={place.name}/>
                                 <p>

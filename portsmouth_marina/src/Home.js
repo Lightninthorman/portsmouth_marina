@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 function Home (props){
 
     useEffect(() => {
-        console.log("re-render");
+
         window.scrollTo(0,0);
     });
 
@@ -93,7 +93,7 @@ function Home (props){
                             </iframe>
                             <a className="weather-widget-link"  href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="noopener noreferrer"  target="_blank">Piscataqua River-Badgers Island weather info</a>
                         </div>
-                            <a  className="nav-item home-page-btn" href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="nofollow" target="_blank" rel="noopener noreferrer" >Piscataqua Marina Weather Details</a>
+                            <a  className="nav-item home-page-btn" href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" target="_blank" rel="noopener noreferrer" >Piscataqua Marina Weather Details</a>
                     </div>
                 </div>
             </div>

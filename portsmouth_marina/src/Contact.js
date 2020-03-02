@@ -4,7 +4,6 @@ import React, {useEffect} from 'react';
 function Contact (props){
 
     useEffect(() => {
-        console.log("re-render");
         window.scrollTo(0,0);
     });
 
