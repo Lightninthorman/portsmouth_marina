@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {Link} from "react-router-dom";
 
 
 function Rates (props){
@@ -11,7 +12,7 @@ function Rates (props){
         <main className="container">
             <div className="explore-location-description underline">
                 <p>
-                    We offer seasonal slips for winter and summer.  Our summer season runs May 15th to October 15th.  Please contact us for pricing and availability.
+                    We offer seasonal slips for winter and summer.  Our summer season runs May 15th to October 15th.  Please <Link to="/contact" className="nav-item" style={{margin:0}}>contact us</Link> for pricing and availability.
                 </p>
             </div>
             <div className="row">
@@ -34,7 +35,7 @@ function Rates (props){
                           <td>$3/loa</td>
                         </tr>
                         <tr>
-                          <td>40-70’</td>
+                          <td>41-70’</td>
                           <td>$4/loa</td>
                         </tr>
                         <tr>
@@ -69,14 +70,17 @@ function Rates (props){
                         </tr>
                       </tbody>
                     </table>
-                    <br />
                 </div>
                 <div className="col-md-6 d-flex flex-row justify-content-center">
                 {/*Dockwa Embeded Reservation Form https://dockwa.com */}
 
-                <iframe title="dockwa" src="https://dockwa.com/explore/destination/63cxm-piscataqua-marina/embed" id="dockwa-embed" frameBorder="0"  style={{height:"1000px"}}></iframe>
+                <iframe title="dockwa" src="https://dockwa.com/explore/destination/63cxm-piscataqua-marina/embed" id="dockwa-embed" frameBorder="0"  style={{height:"650px"}}></iframe>
                 </div>
             </div>
+            <div>
+                <img src="/images/piscataqua_marina_dock_layout.jpg" alt="dock layout" style={{width:"100%"}}/>
+            </div>
+
         </main>
     )
 }

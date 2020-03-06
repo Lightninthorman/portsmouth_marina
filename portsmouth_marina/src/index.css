@@ -23,7 +23,7 @@ code {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: local;
     background-color: #064273;
     padding: 0;
 }
@@ -31,22 +31,26 @@ code {
 .home-header{
     background-image: url('/images/piscataqua_marina_fourth_of_july_fireworks.jpg');
     height:700px;
+    background-attachment: fixed;
 }
 
 .explore-header{
     background-image: url('/images/billy-hayes-il8W_r4AeSM-unsplash.jpg');
     height:400px;
-    background-attachment: local;
 }
-.rates-header{
+.reserve-header{
     background-image: url('/images/jorge-vasconez-LCaKuYefLQk-unsplash.jpg');
+    height:400px;
+}
+
+.services-header{
+    background-image: url('/images/aditya-wardhana-CffpuUDQ1iU-unsplash.jpg');
     height:400px;
 }
 
 .contact-header{
     background-image: url('/images/patrick-konig-E_-yQcS6qm8-unsplash.jpg');
     height:400px;
-    background-attachment: local;
 }
 
 header h1{
@@ -59,9 +63,26 @@ header h1{
 
 }
 header h1 span{
-    line-height: 1.8;
+    line-height: 1.2;
 }
 
+.home-logo-placement{
+    width:365px;
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    /* transform: translate(-30px, -70%); */
+    z-index:1;
+}
+
+.home-text-placement{
+    position: absolute;
+    top: 120px;
+    right:35px;
+    /* transform: translate(-30%, -70%); */
+    z-index:2;
+
+}
 
 .header-logo-placement{
     width:365px;
@@ -314,6 +335,17 @@ Screen size breakpoints styling
 
 @media only screen and (max-width: 1025px){
   /* Keeps layout looking ok as screen gets smaller */
+  .home-logo-placement{
+      width:270px;
+      right: 42px;
+  }
+
+  .home-text-placement{
+      font-size: 38px;
+      top: 103px;
+      right: 0px;
+  }
+
 
   #badger-island-view{
       width:100%;
@@ -357,5 +389,20 @@ Screen size breakpoints styling
 @media only screen and (max-width: 600px){
     #badger-island-view, .home-item-image{
         width:100%;
+    }
+
+    .home-logo-placement{
+        width:170px;
+        top:10px;
+        right: 50%;
+        transform:translateX(50%);
+    }
+
+    .home-text-placement{
+        width:170px;
+        font-size: 24px;
+        top: 42px;
+        right: 50%;
+        transform:translateX(50%);
     }
 }

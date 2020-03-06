@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import exploreData from './explore-data.js'
+let exploreData = require('./explore-data.json')
 
 function Explore (){
 

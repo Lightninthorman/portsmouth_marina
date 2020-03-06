@@ -1,0 +1,44 @@
+{
+    "groceries":[
+        {
+            "name": "Carl's Meat Market",
+            "description": "Fine meats and poultry products. Daily lunch specials, and one of the largest craft beer selections in southern Maine.",
+            "image":"/images/services/carls_meat_market.jpg",
+            "link": "https://www.facebook.com/pg/Carls-Meat-Market-553634204700515/about/?ref=page_internal"
+        },
+        {
+            "name": "Golden Harvest Produce",
+            "description": "Fresh, local produce. Wine, cheese, pie. Everything for a delecious meal can be found here.",
+            "image":"/images/services/golden_harvest.jpg",
+            "link": "https://www.yelp.com/biz/golden-harvest-produce-market-kittery"
+        },
+        {
+            "name": "Terra Cotta Pasta",
+            "description": "Gourmet line of all natural fresh pastas, ravioli and sauces. Their motto: 'You boil the water, let Terra Cotta Pasta do the rest.'",
+            "image":"/images/services/terra_cotta_pasta.png",
+            "link": "http://www.terracottapastacompany.com/"
+        },
+        {
+            "name": "Beach Pea Bakery",
+            "description": "Artisan breads, pastries, and sweets. Handcrafted salads, sandwiches, and soup.",
+            "image":"/images/services/beach_pea_baking.jpg",
+            "link": "https://www.beachpeabaking.com/"
+        }
+    ],
+    "fuel":[
+        {
+        "name": "Portsmouth Yacht Club",
+        "description": "The fuel dock is open 7 days a week in season and is available to all boaters.",
+        "image":"/images/services/portsmouth_yc.jpg",
+        "link": "http://portsmouthyc.org/WP/"
+        }
+    ],
+    "repairs":[
+        {
+        "name": "Island Marine Servicei",
+        "description": "Servicing Kittery & Portsmouth harbor since 1992. Complete line of seasonal maintenance and repairs.",
+        "image":"/images/services/island_marine_service.png",
+        "link": "https://www.badgersislandmarina.com/ims.html"
+        }
+    ]
+}

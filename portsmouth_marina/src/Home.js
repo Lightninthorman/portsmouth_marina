@@ -15,7 +15,7 @@ function Home (props){
             <div className="row d-flex flex-row justify-content-center align-items-baseline my-5">
                 <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5">
                     <Link to="/rates" className="link-icon"><img  src="images/Piscataqua_Marina_Rates_Icon.png" alt="Piscataqua Marina Dockage Rates"/></Link>
-                    <h4>Rates</h4>
+                    <h4>Reserve a Slip</h4>
                 </div>
                 <div className="icon-container col-xs-3 d-flex flex-column align-items-center  mx-5">
                     <a className="link-icon" href="#weather"><img src="images/Piscataqua_Marina_Weather_Icon.png" alt="Piscataqua Marina Weather Conditions"/></a>

@@ -23,8 +23,8 @@ function Footer (props){
                 </div>
                 <div className="footer-content-box">
                     <div className="footer-content mx-4 my-3">
-                        <h5>Docmaster</h5>
-                        <a href="tel:207-439-1661"><img src="images/phone.png" alt="phone" /> (207)-439-1661</a>
+                        <h5>Dockmaster</h5>
+                        <a href="tel:+12074391661"><img src="images/phone.png" alt="phone" /> (207)-439-1661</a>
                         <p><a href="mailto:David@PiscataquaMarina.com"><img src="images/email.png" alt="email" /> David@PiscataquaMarina.com</a></p>
                         <p>VHF Ch 9 or 13</p>
                     </div>

@@ -13,7 +13,7 @@ function Contact (props){
         <div className="row justify-content-center">
             <div className="explore-item contact-container col-md-4 ">
                 <h5>David - Docmaster</h5>
-                <a href="tel:207-439-1661"><img src="images/phone.png" alt="phone" /> (207)-439-1661</a>
+                <a href="tel:+12074391661"><img src="images/phone.png" alt="phone" /> (207)-439-1661</a>
                 <a href="mailto:David@PiscataquaMarina.com"><img src="images/email.png" alt="email" /> David@PiscataquaMarina.com</a>
                 <br />
                 <p>VHF Ch 9 or 13</p>
