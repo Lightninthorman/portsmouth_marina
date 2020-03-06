@@ -1,4 +1,12 @@
 {
+    "portsmouth":[
+        {
+            "name": "Explore Portsmouth",
+            "image": "/images/explore/go_portsmouth.jpg",
+            "description": "Everything you need to plan a trip to Portsmouth, NH",
+            "link":"https://www.goportsmouthnh.com/"
+        }
+    ],
     "badgersIsland":[
         {
         "name": "Ore Nells BBQ",

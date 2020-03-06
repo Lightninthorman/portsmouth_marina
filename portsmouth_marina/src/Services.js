@@ -58,6 +58,24 @@ function Services (props){
                 })}
             </div>
             <div className="explore-location underline">
+                <h2>Boat Supplies</h2>
+            </div>
+            <div className="row justify-content-center">
+                {serviceData.supplies.map((place, key) => {
+                    return(
+                        <div className="explore-item col-md-3 " key={key}>
+                            <a className="d-flex flex-column align-items-center" href={place.link} target="_blank" rel="noopener noreferrer">
+                                <h5>{place.name}</h5>
+                                <img src={place.image} alt={place.name}/>
+                                <p>
+                                    {place.description}
+                                </p>
+                            </a>
+                        </div>
+                    )
+                })}
+            </div>
+            <div className="explore-location underline">
                 <h2>Repairs</h2>
             </div>
             <div className="explore-location-description">

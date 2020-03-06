@@ -33,6 +33,15 @@
         "link": "http://portsmouthyc.org/WP/"
         }
     ],
+    "supplies":[
+        {
+            "name": "Hamilton Marine Supply",
+            "description": "Located on the Rt. 1 bypass about 1 mile away is Hamilton Marine Supply that has all your boating needs.",
+            "image":"/images/services/hamilton_marine.png",
+            "link": "https://hamiltonmarine.com/"
+        }
+        
+    ],
     "repairs":[
         {
         "name": "Island Marine Servicei",
