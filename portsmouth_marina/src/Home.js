@@ -13,21 +13,21 @@ function Home (props){
         <>
         <main className="container-fluid">
             <div className="row d-flex flex-row justify-content-center align-items-baseline my-5">
-                <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5">
-                    <Link to="/rates" className="link-icon"><img  src="images/Piscataqua_Marina_Rates_Icon.png" alt="Piscataqua Marina Dockage Rates"/></Link>
+                <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5 my-1">
+                    <Link to="/reserve" className="link-icon"><img  src="images/Piscataqua_Marina_Rates_Icon.png" alt="Piscataqua Marina Dockage Rates"/></Link>
                     <h4>Reserve a Slip</h4>
                 </div>
-                <div className="icon-container col-xs-3 d-flex flex-column align-items-center  mx-5">
+                <div className="icon-container col-xs-3 d-flex flex-column align-items-center  mx-5 my-1">
                     <a className="link-icon" href="#weather"><img src="images/Piscataqua_Marina_Weather_Icon.png" alt="Piscataqua Marina Weather Conditions"/></a>
                     <h4>Weather Conditions</h4>
                 </div>
-                <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5">
+                <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5 my-1">
+                    <Link className="link-icon" to="/services"><img src="images/Piscataqua_Marina_Services_Icon.png" alt="Piscataqua Marina Contact"/></Link>
+                    <h4>Services</h4>
+                </div>
+                <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5 my-1">
                     <Link className="link-icon" to="/explore"><img src="images/Piscataqua_Marina_Explore_Icon.png" alt="Piscataqua Marina Explore"/></Link>
                     <h4>Explore</h4>
-                </div>
-                <div className="icon-container col-xs-3 d-flex flex-column align-items-center mx-5">
-                    <Link className="link-icon" to="/contact"><img src="images/Piscataqua_Marina_Contact_Icon.png" alt="Piscataqua Marina Contact"/></Link>
-                    <h4>Contact</h4>
                 </div>
             </div>
 
@@ -93,7 +93,14 @@ function Home (props){
                             </iframe>
                             <a className="weather-widget-link"  href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" rel="noopener noreferrer"  target="_blank">Piscataqua River-Badgers Island weather info</a>
                         </div>
-                            <a  className="nav-item home-page-btn" href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" target="_blank" rel="noopener noreferrer" >Piscataqua Marina Weather Details</a>
+                        <div className="row">
+                            <div className="col-sm-6 my-1">
+                            <a  className="nav-item home-page-btn my-1 h-100 d-flex align-items-center" href="https://www.willyweather.com/me/york-county/piscataqua-river--badgers-island.html" target="_blank" rel="noopener noreferrer" >Piscataqua Marina Weather Details</a>
+                            </div>
+                            <div className="col-sm-6 my-1">
+                            <a  className="nav-item home-page-btn my-1 h-100 d-flex align-items-center" href="https://tidesandcurrents.noaa.gov/noaacurrents/Predictions?d=2020-04-29&r=1&tz=LST%2fLDT&u=1&id=PIR0705_16&i=&t=am%2fpm&threshold=&thresholdvalue=" target="_blank" rel="noopener noreferrer">NOAA Tidal Current Predictions</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

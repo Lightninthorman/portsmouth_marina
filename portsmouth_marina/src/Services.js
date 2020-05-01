@@ -10,7 +10,7 @@ function Services (props){
     });
 
     return(
-        <main className="container">
+        <main className="container-fluid">
             <div className="explore-location underline">
                 <h2>Groceries</h2>
             </div>

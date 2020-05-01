@@ -335,6 +335,10 @@ Screen size breakpoints styling
 
 @media only screen and (max-width: 1025px){
   /* Keeps layout looking ok as screen gets smaller */
+  .home-header, .rates-header{
+      background-attachment: local;
+  }
+  
   .home-logo-placement{
       width:270px;
       right: 42px;
@@ -367,9 +371,7 @@ Screen size breakpoints styling
 }
 
 @media only screen and (max-width: 767px){
-    .home-header, .rates-header{
-        background-attachment: local;
-    }
+
 
     #badger-island-view, .home-item-image{
         width:370px;

@@ -12,8 +12,8 @@
     z-index: 100;
     opacity:1;
     transition: opacity .9s;
-}
 
+}
 
 
 .nav-bar-background-hide{
@@ -30,7 +30,7 @@
 .nav-list{
     display:flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
     width:100%;
     transition: .5s;
@@ -151,7 +151,7 @@ Screen size breakpoints styling
     }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 834px){
   /* Keeps layout looking ok as screen gets smaller */
 
   .nav-item{
